@@ -1,4 +1,4 @@
-let a = 45;
+/* let a = 45;
 a = 45 + 89;
 let b = "This is Pranoy";
 const c = 67;
@@ -14,4 +14,9 @@ function myFunction4() {
     console.log(msg.length);
 }
 
-myFunction4();
+myFunction4(); */
+
+export function myFunction5(name) {
+    let res = name.slice(0, 3);
+    console.log(res);
+}
