@@ -17,6 +17,6 @@ function myFunction4() {
 myFunction4(); */
 
 export function myFunction5(name) {
-    let res = name.slice(0, 3);
+    let res = name.slice(1, 4);
     console.log(res);
 }
