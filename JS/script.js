@@ -44,3 +44,16 @@ console.log(typeof salary);
 let i = null;
 console.log(i);
 console.log(typeof i);
+
+/* let, const, var */
+/* -------------------------------------------------- */
+let age = 30;
+age = 31;
+console.log(age);
+const birthyear = 1998;
+// birthyear = 2001; (not possible)
+console.log(birthyear);
+// var is a old way of defining variables prior to ES6
+var job = 'Programmer';
+var job = 'Analyst';
+console.log(job);
