@@ -108,12 +108,16 @@ GOOD LUCK 😀
 */
 let mass, height;
 let BMI = (mass, height) => (mass / (height ** 2));
-let MarkWeight = 95,
-    MarkHeight = 1.88;
-let JohnWeight = 85,
-    JohnHeight = 1.76;
-let MarkBMI = BMI(MarkWeight, MarkHeight);
-let JohnBMI = BMI(JohnWeight, JohnHeight);
+let Mark = {
+    weight: 78,
+    height: 1.69
+}
+let John = {
+    weight: 92,
+    height: 1.95
+}
+let MarkBMI = BMI(Mark.weight, Mark.height);
+let JohnBMI = BMI(John.weight, John.height);
 console.log("BMI index of Mark:" + Math.ceil(MarkBMI));
 console.log("BMI index of John:" + Math.ceil(JohnBMI));
 let markHigherBMI = MarkBMI > JohnBMI;
