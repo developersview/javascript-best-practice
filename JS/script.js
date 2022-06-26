@@ -57,3 +57,12 @@ console.log(birthyear);
 var job = 'Programmer';
 var job = 'Analyst';
 console.log(job);
+
+/* Basic Operator */
+/* -------------------------------------------------- */
+//Math Operators
+const now = 2022;
+let agePranoy = now - 1998;
+let ageJonas = now - 1977;
+console.log(agePranoy);
+console.log(ageJonas);
