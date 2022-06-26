@@ -64,5 +64,32 @@ console.log(job);
 const now = 2022;
 let agePranoy = now - 1998;
 let ageJonas = now - 1977;
-console.log(agePranoy);
-console.log(ageJonas);
+console.log(agePranoy, ageJonas);
+console.log(agePranoy * 2, ageJonas / 10);
+console.log(2 ** 3);
+
+// Assignment operators
+console.log("Assignment operators");
+let x = 10 + 5;
+console.log(x);
+x += 10;
+console.log(x);
+x *= 4;
+console.log(x);
+x++;
+console.log(x);
+x--;
+console.log(x);
+x--;
+console.log(x);
+
+// Comparison operators
+console.log(agePranoy > ageJonas);
+console.log(agePranoy >= 24);
+const isFullAge = ageJonas >= 18;
+console.log(now - 1991 > now - 2018);
+let a, b;
+a = b = 25 - 10 - 5; // x = y = 10, x = 10
+console.log(a, b);
+const averageAge = (agePranoy + ageJonas) / 2;
+console.log(agePranoy, ageJonas, averageAge);
