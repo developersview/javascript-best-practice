@@ -1,6 +1,6 @@
-import { log } from 'console';
-import { table } from 'console';
-import pkg from 'node-emoji';
+import { log } from "console";
+import { table } from "console";
+import pkg from "node-emoji";
 
 //creating a class
 class Fruit {

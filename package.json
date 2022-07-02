@@ -1,6 +1,7 @@
 {
     "type": "module",
     "dependencies": {
-        "node-emoji": "^1.11.0"
+        "node-emoji": "^1.11.0",
+        "open": "^8.4.0"
     }
 }

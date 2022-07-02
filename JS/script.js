@@ -1,3 +1,4 @@
+import open from "open";
 /* Values and Variables */
 /* -------------------------------------------------- */
 let js = "Amazing";
@@ -113,3 +114,15 @@ const pranoyNew = `I am ${firstName}, a ${
   currentYear - birthYear
 } years old ${myJob}`;
 console.log(pranoyNew);
+
+/* If Else */
+/* -------------------------------------------------- */
+const myAge = 24;
+const isOldEnough = age >= 18;
+//const { open } = pkg;
+if (myAge >= 18) {
+    console.log(`Applicable for Driving license 🚗`);
+    open("https://parivahan.gov.in/");
+} else {
+    console.log(`Not applicable for driving license 😔😓`);
+}
