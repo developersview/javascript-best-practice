@@ -1,22 +1,22 @@
 /* Values and Variables */
 /* -------------------------------------------------- */
-let js = 'Amazing';
+let js = "Amazing";
 // if (js === 'Amazing') alert("JS is fun!!");
 console.log(58 + 98 + 62 - 78);
 
 // Values and Variables
 console.log("Jonas");
 console.log(23);
-let firstName = "Matilda";
+let Name = "Matilda";
 let PI = 3.1415;
-console.log(firstName);
-console.log(firstName);
-console.log(firstName);
+console.log(Name);
+console.log(Name);
+console.log(Name);
 console.log(PI);
 
 //Assignement - Values and Variables
-let country = 'INDIA';
-let continent = 'Asia';
+let country = "INDIA";
+let continent = "Asia";
 let population = 98956497662;
 
 console.log(country + " " + continent + " " + population);
@@ -25,8 +25,8 @@ console.log(country + " " + continent + " " + population);
 /* -------------------------------------------------- */
 //Object
 let person = {
-    name: 'Jonas',
-    age: 24
+    name: "Jonas",
+    age: 24,
 };
 console.log(person);
 console.log(typeof person);
@@ -54,8 +54,8 @@ const birthyear = 1998;
 // birthyear = 2001; (not possible)
 console.log(birthyear);
 // var is a old way of defining variables prior to ES6
-var job = 'Programmer';
-var job = 'Analyst';
+var job = "Programmer";
+var job = "Analyst";
 console.log(job);
 
 /* Basic Operator */
@@ -93,3 +93,23 @@ a = b = 25 - 10 - 5; // x = y = 10, x = 10
 console.log(a, b);
 const averageAge = (agePranoy + ageJonas) / 2;
 console.log(agePranoy, ageJonas, averageAge);
+
+/* Strings and Template Literals */
+/* -------------------------------------------------- */
+const firstName = "Pranoy";
+const myJob = "Software Engineer";
+const birthYear = 1998;
+const currentYear = 2022;
+
+const pranoy =
+    "I am " +
+    firstName +
+    ", a " +
+    (currentYear - birthYear) +
+    " years old " +
+    myJob;
+console.log(pranoy);
+const pranoyNew = `I am ${firstName}, a ${
+  currentYear - birthYear
+} years old ${myJob}`;
+console.log(pranoyNew);
