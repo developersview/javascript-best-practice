@@ -122,7 +122,16 @@ const isOldEnough = age >= 18;
 //const { open } = pkg;
 if (myAge >= 18) {
     console.log(`Applicable for Driving license 🚗`);
-    open("https://parivahan.gov.in/");
+    //open("https://parivahan.gov.in/");
 } else {
     console.log(`Not applicable for driving license 😔😓`);
 }
+
+/* Type Conversion */
+/* -------------------------------------------------- */
+const inputYear = "1991";
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+console.log(Number("Pranoy"));
+console.log(typeof NaN);
+console.log(String(98), 98, "98");
