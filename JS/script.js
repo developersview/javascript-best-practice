@@ -135,3 +135,10 @@ console.log(Number(inputYear) + 18);
 console.log(Number("Pranoy"));
 console.log(typeof NaN);
 console.log(String(98), 98, "98");
+
+/* Type Coercion */
+/* -------------------------------------------------- */
+console.log("98" - "56" - 10);
+console.log("98" - "56" - 10 + "24");
+console.log("50" * "2");
+console.log("50" < "2");
