@@ -1,7 +1,7 @@
-//const axios = require('axios');
-import axios from "axios";
+const axios = require("axios");
+//import axios from "axios";
 
-/* axios
+axios
     .get("http://localhost:8080/api/v1/employees")
     .then((res) => {
         //console.log(`statusCode: ${res.status}`);
@@ -9,8 +9,8 @@ import axios from "axios";
     })
     .catch((error) => {
         console.error(error);
-    }); */
-axios
+    });
+/* axios
     .post("http://localhost:8080/api/v1/employee", {
         firstName: "Thor",
         lastName: "Odinson",
@@ -22,4 +22,4 @@ axios
     })
     .catch((error) => {
         console.error(error);
-    });
+    }); */
