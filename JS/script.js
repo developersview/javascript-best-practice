@@ -171,3 +171,8 @@ if (height) {
 } else {
     console.log(`Height is ${typeof height}`);
 }
+
+/* Equality operators == vs === */
+/* -------------------------------------------------- */
+const age1 = 18;
+if (age1 === 18) console.log("You are an adult!");
