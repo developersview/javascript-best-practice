@@ -176,3 +176,10 @@ if (height) {
 /* -------------------------------------------------- */
 const age1 = 18;
 if (age1 === 18) console.log("You are an adult!");
+
+/*Logical Operator*/
+/* -------------------------------------------------- */
+const hasDriverLicense = false;
+const hasGoodVision = true;
+console.log(hasDriverLicense && hasGoodVision);
+console.log(hasDriverLicense || hasGoodVision);
