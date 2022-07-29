@@ -36,7 +36,7 @@ if (scoreDolphin > scoreKoalas && scoreDolphin >= 100) {
 } else if (
     scoreDolphin === scoreKoalas &&
     scoreDolphin >= 100 &&
-    scoreKoala >= 100
+    scoreKoalas >= 100
 ) {
     console.log("Both win the trophy!");
 } else {
