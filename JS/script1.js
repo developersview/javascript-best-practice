@@ -29,3 +29,24 @@ function fruitProcessor(apple, orange) {
 }
 const result = fruitProcessor(5, 4);
 console.log(result);
+
+/* Working with Arrow Functions */
+/* ---------------------------------------------------- */
+const calcAge = (birthYear, name) => 2022 - birthYear;
+console.log(`The age is : ${calcAge(1998)}`);
+
+const yearsUntilRetirement = (birthYear, name) => {
+    const age = calcAge(birthYear);
+    const retirement = 65 - age;
+    return `${name} retires in ${retirement} years`;
+};
+let person1 = {
+    name: "Jonas",
+    birthYear: 1996,
+};
+let person2 = {
+    name: "Pranoy",
+    birthYear: 1998,
+};
+console.log(yearsUntilRetirement(person1.birthYear, person1.name));
+console.log(yearsUntilRetirement(person2.birthYear, person2.name));
