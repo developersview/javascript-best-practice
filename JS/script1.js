@@ -32,7 +32,7 @@ console.log(result);
 
 /* Working with Arrow Functions */
 /* ---------------------------------------------------- */
-const calcAge = (birthYear, name) => 2022 - birthYear;
+const calcAge = (birthYear) => 2022 - birthYear;
 console.log(`The age is : ${calcAge(1998)}`);
 
 const yearsUntilRetirement = (birthYear, name) => {
@@ -68,3 +68,8 @@ const lastName = "Chakraborty";
 const age = 24;
 const Pranoy = [firstName, lastName, age, names];
 console.log(Pranoy);
+
+const birthYears = [1998, 1997, 1992, 2000, 1996, 1989];
+birthYears.forEach((element) => {
+    console.log(`The age is : ${calcAge(element)}`);
+});
