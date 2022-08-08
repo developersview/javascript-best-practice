@@ -50,3 +50,21 @@ let person2 = {
 };
 console.log(yearsUntilRetirement(person1.birthYear, person1.name));
 console.log(yearsUntilRetirement(person2.birthYear, person2.name));
+
+/* JavaScirpt Array*/
+/* ---------------------------------------------------- */
+const names = ["Jonas", "Martha", "Pranoy"];
+console.log(names);
+const names1 = new Array("Jonas", "Martha", "Pranoy");
+console.log(names1);
+console.log(names[1], names1[1]);
+console.log(names.length);
+console.log(names[names.length - 1]);
+names[3] = "Tony";
+console.log(names);
+console.log(names.length);
+const firstName = "Pranoy";
+const lastName = "Chakraborty";
+const age = 24;
+const Pranoy = [firstName, lastName, age, names];
+console.log(Pranoy);
