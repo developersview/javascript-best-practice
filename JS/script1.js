@@ -73,3 +73,7 @@ const birthYears = [1998, 1997, 1992, 2000, 1996, 1989];
 birthYears.forEach((element) => {
     console.log(`The age is : ${calcAge(element)}`);
 });
+
+let element = null;
+//element === undefined ? console.log(element.not) : null;
+console.log(element.age);
