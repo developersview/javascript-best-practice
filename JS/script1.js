@@ -74,6 +74,23 @@ birthYears.forEach((element) => {
     console.log(`The age is : ${calcAge(element)}`);
 });
 
-let element = null;
-//element === undefined ? console.log(element.not) : null;
-console.log(element.age);
+/* JavaScirpt Array Methods*/
+/* ---------------------------------------------------- */
+const friends = ["Jonas", "Martha", "Pranoy", "Noah"];
+console.log(friends);
+friends.push("Steve");
+console.log(friends, friends.length);
+friends.unshift("Tony");
+console.log(friends, friends.length);
+const popped = friends.pop();
+console.log(popped);
+friends.shift();
+console.log(friends);
+console.log(friends.indexOf("Pranoy"));
+console.log(friends.indexOf("Steve"));
+console.log(friends.includes("Pranoy"));
+console.log(friends.includes("Steve"));
+
+friends.includes("Martha") ?
+    console.log("You have a friend called Martha") :
+    null;
