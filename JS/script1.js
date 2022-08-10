@@ -94,3 +94,18 @@ console.log(friends.includes("Steve"));
 friends.includes("Martha") ?
     console.log("You have a friend called Martha") :
     null;
+
+/* Javascript Array*/
+/* ---------------------------------------------------- */
+const pranoyObject = {
+    firstName: "Pranoy",
+    lastName: "Chakraborty",
+    birthYear: 1998,
+    job: "Software Developer",
+    friends: ["Natasha", "Steve", "Peter", "Tony"],
+};
+console.log(pranoyObject.firstName);
+console.log(pranoyObject.friends);
+console.log(pranoyObject.friends[0]);
+pranoyObject.friends.unshift("Wanda");
+console.log(pranoyObject.friends);
