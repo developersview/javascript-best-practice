@@ -103,9 +103,29 @@ const pranoyObject = {
     birthYear: 1998,
     job: "Software Developer",
     friends: ["Natasha", "Steve", "Peter", "Tony"],
+    location: "India",
+    twitter: "@ig_pranoy",
 };
-console.log(pranoyObject.firstName);
+console.log(pranoyObject.firstName); // dot notation
 console.log(pranoyObject.friends);
 console.log(pranoyObject.friends[0]);
 pranoyObject.friends.unshift("Wanda");
 console.log(pranoyObject.friends);
+console.log(pranoyObject);
+const namekey = "Name";
+console.log(pranoyObject["first" + namekey]); // bracket notation
+console.log(pranoyObject["last" + namekey]);
+
+const interestedIn = prompt(
+    "What you want to know about Pranoy? Choose between firstName, lastName, job, age, friends, location and twitter"
+);
+
+if (interestedIn === "age") {
+    alert(2022 - pranoyObject.birthYear);
+    console.log(2022 - pranoyObject.birthYear);
+} else if (pranoyObject[interestedIn]) {
+    alert(pranoyObject[interestedIn]);
+    console.log(pranoyObject[interestedIn]);
+} else {
+    alert("Wrong Request!");
+}
