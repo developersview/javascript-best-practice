@@ -95,7 +95,7 @@ friends.includes("Martha") ?
     console.log("You have a friend called Martha") :
     null;
 
-/* Javascript Array*/
+/* Javascript Object*/
 /* ---------------------------------------------------- */
 const pranoyObject = {
     firstName: "Pranoy",
