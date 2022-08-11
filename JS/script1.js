@@ -80,11 +80,11 @@ const friends = ["Jonas", "Martha", "Pranoy", "Noah"];
 console.log(friends);
 friends.push("Steve");
 console.log(friends, friends.length);
-friends.unshift("Tony");
+friends.unshift("Tony"); // to add a element at the begining of an array
 console.log(friends, friends.length);
 const popped = friends.pop();
 console.log(popped);
-friends.shift();
+friends.shift(); // to remove a element from the beginining of an array
 console.log(friends);
 console.log(friends.indexOf("Pranoy"));
 console.log(friends.indexOf("Steve"));
