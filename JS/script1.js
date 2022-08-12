@@ -116,7 +116,7 @@ const namekey = "Name";
 console.log(pranoyObject["first" + namekey]); // bracket notation
 console.log(pranoyObject["last" + namekey]);
 
-const interestedIn = prompt(
+/*  const interestedIn = prompt(
     "What you want to know about Pranoy? Choose between firstName, lastName, job, age, friends, location and twitter"
 );
 
@@ -128,4 +128,31 @@ if (interestedIn === "age") {
     console.log(pranoyObject[interestedIn]);
 } else {
     alert("Wrong Request!");
-}
+} */
+/* Javascript Object Methods*/
+/* ---------------------------------------------------- */
+const pranoyObject1 = {
+    firstName: "Pranoy",
+    lastName: "Chakraborty",
+    birthYear: 1998,
+    job: "Software Developer",
+    friends: ["Natasha", "Steve", "Peter", "Tony"],
+    location: "India",
+    twitter: "@ig_pranoy",
+    hasDrivingLicense: true,
+    calAge: function() {
+        console.log(this);
+        this.age = 2022 - this.birthYear;
+        return this.age;
+    },
+    getSummary: function() {
+        return `${this.firstName} is ${this.age} years old ${this.job} and he ${
+      this.hasDrivingLicense
+        ? "has a driving license."
+        : "does not have a driving license."
+    } `;
+    },
+};
+console.log(pranoyObject1.calAge());
+console.log(pranoyObject1);
+console.log(pranoyObject1.getSummary());
