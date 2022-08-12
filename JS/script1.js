@@ -156,3 +156,13 @@ const pranoyObject1 = {
 console.log(pranoyObject1.calAge());
 console.log(pranoyObject1);
 console.log(pranoyObject1.getSummary());
+
+/* Javascript loops*/
+/* ---------------------------------------------------- */
+
+const years = [1998, 1997, 1991, 2001, 1982];
+const ages = [];
+for (let i = 0; i < years.length; i++) {
+    ages.push(2022 - years[i]);
+}
+console.log(ages);
