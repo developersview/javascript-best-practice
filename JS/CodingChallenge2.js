@@ -19,8 +19,8 @@ let John = {
 };
 let MarkBMI = BMI(Mark.weight, Mark.height);
 let JohnBMI = BMI(John.weight, John.height);
-console.log("BMI index of Mark:" + Math.ceil(MarkBMI));
-console.log("BMI index of John:" + Math.ceil(JohnBMI));
+console.log('BMI index of Mark:' + Math.ceil(MarkBMI));
+console.log('BMI index of John:' + Math.ceil(JohnBMI));
 
 if (MarkBMI > JohnBMI) {
     console.log(
