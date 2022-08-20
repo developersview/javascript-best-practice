@@ -2,15 +2,15 @@
 
 function calcAge(birthYear) {
     const age = 2022 - birthYear;
-    console.log(firstName);
+    console.log(firstName1);
 
     let output = () =>
-        `${firstName}, You are ${age} years old, born in ${birthYear}`;
+        `${firstName1}, You are ${age} years old, born in ${birthYear}`;
     console.log(output());
     return age;
 }
 
-const firstName = 'Pranoy';
+const firstName1 = 'Pranoy';
 calcAge(1998);
 
 const Pranoy = {
@@ -33,3 +33,28 @@ const Jonas = {
 };
 console.log(Pranoy.calcAge());
 console.log(Jonas.calcAge());
+
+let firstName = 'Noah';
+
+const Martha = {
+    firstName: 'Martha',
+    year: 1999,
+    calcAge: function() {
+        console.log(this);
+        const age = 2022 - this.year;
+        const self = this;
+        const isMillenial = function() {
+            if (self.year >= 1985 && self.year <= 2000) {
+                console.log('You are an Millenial!');
+            }
+        };
+        isMillenial();
+    },
+    greet: () => {
+        console.log(this);
+        console.log(`Hey ${this.firstName}`);
+    },
+};
+
+Martha.greet();
+Martha.calcAge();
