@@ -73,4 +73,36 @@ const addArrow = (a, b) => {
     return a + b;
 };
 
-addArrow();
+//addArrow();
+
+//Deep Copy
+let lastName = 'Judson';
+let newLastName = 'Williams';
+console.log(lastName, newLastName);
+
+//shallow copy
+const David = {
+    lastName: 'Judson',
+};
+console.log(David.lastName);
+const David2 = David;
+David2.lastName = 'Roy';
+console.log(David.lastName);
+console.log(David2.lastName);
+
+//copying the objects without changing its orginal value
+const jessica = {
+    firstName: 'Jessica',
+    lastName: 'Williams',
+    age: 25,
+    family: ['Alice', 'Bob'],
+};
+
+const jessicaCopy = Object.assign({}, jessica);
+jessicaCopy.lastName = 'Judson';
+console.log(jessica);
+console.log(jessicaCopy);
+jessicaCopy.family.push('Mary');
+jessicaCopy.family.push('John');
+console.log(jessica);
+console.log(jessicaCopy);
