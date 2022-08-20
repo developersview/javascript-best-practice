@@ -12,3 +12,13 @@ function calcAge(birthYear) {
 
 const firstName = 'Pranoy';
 calcAge(1998);
+
+const Pranoy = {
+    firstName: 'Pranoy',
+    age: 24,
+    calcBirthYear: function() {
+        const birthYear = 2022 - this.age;
+        return birthYear;
+    },
+};
+console.log(Pranoy.calcBirthYear());
