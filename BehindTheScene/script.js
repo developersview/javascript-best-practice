@@ -58,3 +58,19 @@ const Martha = {
 
 Martha.greet();
 Martha.calcAge();
+
+// arguments keyword
+const addExpr = function(a, b) {
+    console.log(arguments);
+    return a + b;
+};
+
+addExpr(2, 5);
+addExpr(2, 5, 6, 10, 12);
+
+const addArrow = (a, b) => {
+    console.log(arguments);
+    return a + b;
+};
+
+addArrow();
