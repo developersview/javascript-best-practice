@@ -37,3 +37,16 @@ console.log(arr);
 console.log(a);
 console.log(b);
 console.log(c);
+
+const [x, y, z] = arr;
+console.log(x, y, z);
+let [main, , seccondary] = restaurant.categories;
+console.log(main, seccondary);
+
+//switching variables
+/* let temp = main;
+main = seccondary;
+seccondary = temp;
+console.log(main, seccondary); */
+[main, seccondary] = [seccondary, main];
+console.log(main, seccondary);
