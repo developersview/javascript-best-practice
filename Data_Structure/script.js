@@ -26,6 +26,10 @@ const restaurant = {
             close: 24,
         },
     },
+
+    order: function(starterIndex, mainIndex) {
+        return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+    },
 };
 
 //Destructuring of Array
@@ -50,3 +54,6 @@ seccondary = temp;
 console.log(main, seccondary); */
 [main, seccondary] = [seccondary, main];
 console.log(main, seccondary);
+
+const [starter, mainCourse] = restaurant.order(2, 0);
+console.log(starter, mainCourse);
