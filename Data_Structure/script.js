@@ -57,3 +57,11 @@ console.log(main, seccondary);
 
 const [starter, mainCourse] = restaurant.order(2, 0);
 console.log(starter, mainCourse);
+
+//nested array
+const nested = [2, 4, [5, 6]];
+const [i, , j] = nested;
+console.log(i, j);
+
+const [i1, j1, [k, l]] = nested;
+console.log(i1, j1, k, l);
