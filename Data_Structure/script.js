@@ -73,3 +73,13 @@ console.log(p, q, r);
 //Destructuring of Objects
 const { name, openingHours, categories } = restaurant;
 console.log(name, openingHours, categories);
+
+const {
+    name: ResturantName,
+    openingHours: Hours,
+    categories: Tags,
+} = restaurant;
+console.log(ResturantName, Hours, Tags);
+
+const { menu = [], starterMenu: starters = [] } = restaurant;
+console.log(menu, starters);
