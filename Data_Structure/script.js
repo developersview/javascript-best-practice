@@ -69,3 +69,7 @@ console.log(i1, j1, k, l);
 //default value
 const [p = 1, q = 1, r = 1] = [8, 9];
 console.log(p, q, r);
+
+//Destructuring of Objects
+const { name, openingHours, categories } = restaurant;
+console.log(name, openingHours, categories);
