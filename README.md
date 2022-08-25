@@ -28,3 +28,5 @@ console.log(job);
 ```
 
 #### (Note : var is a old way of defining variables prior to ES6)
+
+## DOM Manipulation
