@@ -30,10 +30,19 @@ const restaurant = {
     order: function(starterIndex, mainIndex) {
         return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
     },
-    orderDelivery: function({ time, address, mainIndex, starterIndex }) {
-        console.log(
-            `Order Receieved! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
-        );
+    orderDelivery: function({
+        time = '20.00',
+        address,
+        mainIndex = 0,
+        starterIndex = 1,
+    }) {
+        if (address === undefined) {
+            console.log('Please specify a delivery Address');
+        } else {
+            console.log(
+                `Order Receieved! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
+            );
+        }
     },
 };
 
