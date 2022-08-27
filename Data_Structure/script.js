@@ -30,6 +30,11 @@ const restaurant = {
     order: function(starterIndex, mainIndex) {
         return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
     },
+    orderDelivery: function({ time, address, mainIndex, starterIndex }) {
+        console.log(
+            `Order Receieved! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
+        );
+    },
 };
 
 //Destructuring of Array
@@ -91,3 +96,16 @@ let b1 = 999;
 const obj = { a1: 25, b1: 10, c: 56 };
 ({ a1, b1 } = obj);
 console.log(a1, b1);
+
+//Destructuring Nested Objects
+const {
+    fri: { open: o, close: cl },
+} = restaurant.openingHours;
+console.log(`Opening Hour is ${o} and Closing Hour is ${cl}`);
+
+restaurant.orderDelivery({
+    time: '22.30',
+    address: '5th Block, Jayanagar, Bangalore',
+    mainIndex: 2,
+    starterIndex: 2,
+});
