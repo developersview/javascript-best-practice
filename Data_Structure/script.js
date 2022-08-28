@@ -120,8 +120,12 @@ restaurant.orderDelivery({
 });
 
 //spread operator
-const arr1 = [7, 8, 9];
+const arr1 = [7, 8, 9, 10];
 const newarr1 = [1, 2, arr1[0], arr1[1], arr1[2]];
 console.log(newarr1);
 const newarr2 = [1, 2, ...arr1];
 console.log(newarr2);
+console.log(...newarr2);
+const newMenu = [...restaurant.mainMenu, 'Grilled Fish', 'Cheese Momo'];
+console.log(newMenu);
+console.log(...newMenu);
