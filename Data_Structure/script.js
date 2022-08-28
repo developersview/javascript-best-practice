@@ -136,3 +136,9 @@ const mainMenuArray = [...restaurant.mainMenu];
 //join two arrays
 const menu1 = [...restaurant.starterMenu, ...restaurant.mainMenu];
 console.log(menu1);
+
+//Itetrables
+const str = 'Pranoy';
+const letters = [...str, ' ', 'C', 'H'];
+console.log(letters);
+console.log(...letters);
