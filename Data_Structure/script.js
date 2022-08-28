@@ -44,6 +44,9 @@ const restaurant = {
             );
         }
     },
+    orderPasta: function(ing1, ing2, ing3) {
+        console.log(`Here is your delicius pasta with ${ing1}, ${ing2}, ${ing3}`);
+    },
 };
 
 //Destructuring of Array
@@ -142,3 +145,11 @@ const str = 'Pranoy';
 const letters = [...str, ' ', 'C', 'H'];
 console.log(letters);
 console.log(...letters);
+
+const ingredients = [
+    prompt("Let's make pasta! Ingredient 1"),
+    prompt("Let's make pasta! Ingredient 2"),
+    prompt("Let's make pasta! Ingredient 3"),
+];
+console.log(...ingredients);
+restaurant.orderPasta(...ingredients);
