@@ -129,3 +129,10 @@ console.log(...newarr2);
 const newMenu = [...restaurant.mainMenu, 'Grilled Fish', 'Cheese Momo'];
 console.log(newMenu);
 console.log(...newMenu);
+
+//copy array
+const mainMenuArray = [...restaurant.mainMenu];
+
+//join two arrays
+const menu1 = [...restaurant.starterMenu, ...restaurant.mainMenu];
+console.log(menu1);
