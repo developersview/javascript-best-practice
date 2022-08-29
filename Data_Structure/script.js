@@ -160,3 +160,9 @@ console.log(arr2);
 
 const [a2, b2, ...others] = [1, 2, 3, 4, 5];
 console.log(a2, b2, others);
+
+const [pizza, , risotto, ...otherFood] = [
+    ...restaurant.mainMenu,
+    ...restaurant.starterMenu,
+];
+console.log(pizza, risotto, otherFood);
