@@ -146,10 +146,17 @@ const letters = [...str, ' ', 'C', 'H'];
 console.log(letters);
 console.log(...letters);
 
-const ingredients = [
+/* const ingredients = [
     prompt("Let's make pasta! Ingredient 1"),
     prompt("Let's make pasta! Ingredient 2"),
     prompt("Let's make pasta! Ingredient 3"),
 ];
 console.log(...ingredients);
-restaurant.orderPasta(...ingredients);
+restaurant.orderPasta(...ingredients); */
+
+//SPREAD , right side of the assignment operator =
+const arr2 = [1, 2, ...[4, 5]];
+console.log(arr2);
+
+const [a2, b2, ...others] = [1, 2, 3, 4, 5];
+console.log(a2, b2, others);
