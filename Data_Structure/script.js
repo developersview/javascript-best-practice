@@ -171,3 +171,15 @@ console.log(pizza, risotto, otherFood);
 const { sat, ...weekDays } = restaurant.openingHours;
 console.log(sat);
 console.log(weekDays);
+
+//Rest Arguments
+const add = function(...numbers) {
+    let sum = 0;
+    numbers.forEach(element => {
+        sum += element;
+    });
+    console.log(sum);
+};
+add(2, 3);
+add(5, 3, 4, 7);
+add(5, 6, 8, 9, 0, 1, 2);
