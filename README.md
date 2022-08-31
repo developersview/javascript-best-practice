@@ -1,6 +1,6 @@
 # JavaScript-Basics
 
-> This repository is for JS, HTML, CSS Prcatice purpose
+> This repository is for Javascript Prcatice purpose
 
 ---
 
@@ -30,3 +30,5 @@ console.log(job);
 #### (Note : var is a old way of defining variables prior to ES6)
 
 ## DOM Manipulation
+## Behind the Scene
+## Data Structure 
