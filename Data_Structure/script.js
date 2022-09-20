@@ -47,6 +47,11 @@ const restaurant = {
     orderPasta: function(ing1, ing2, ing3) {
         console.log(`Here is your delicius pasta with ${ing1}, ${ing2}, ${ing3}`);
     },
+    orderPizza: function(mainIngredient, ...otherIngrediants) {
+        console.log(
+            `Here is your delicius pizza with ${mainIngredient}, ${otherIngrediants}`
+        );
+    },
 };
 
 //Destructuring of Array
