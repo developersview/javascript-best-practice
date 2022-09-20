@@ -183,3 +183,6 @@ const add = function(...numbers) {
 add(2, 3);
 add(5, 3, 4, 7);
 add(5, 6, 8, 9, 0, 1, 2);
+
+const X = [11, 45, 656, 54];
+add(...X);
