@@ -191,3 +191,5 @@ add(5, 6, 8, 9, 0, 1, 2);
 
 const X = [11, 45, 656, 54];
 add(...X);
+
+restaurant.orderPizza('Chicken', 'Mushroom', 'Onion', 'Cheese', 'Olive');
