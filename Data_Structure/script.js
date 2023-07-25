@@ -27,10 +27,10 @@ const restaurant = {
         },
     },
 
-    order: function(starterIndex, mainIndex) {
+    order: function (starterIndex, mainIndex) {
         return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
     },
-    orderDelivery: function({
+    orderDelivery: function ({
         time = '20.00',
         address,
         mainIndex = 0,
@@ -44,10 +44,10 @@ const restaurant = {
             );
         }
     },
-    orderPasta: function(ing1, ing2, ing3) {
+    orderPasta: function (ing1, ing2, ing3) {
         console.log(`Here is your delicius pasta with ${ing1}, ${ing2}, ${ing3}`);
     },
-    orderPizza: function(mainIngredient, ...otherIngrediants) {
+    orderPizza: function (mainIngredient, ...otherIngrediants) {
         console.log(
             `Here is your delicius pizza with ${mainIngredient}, ${otherIngrediants}`
         );
@@ -110,7 +110,11 @@ console.log(ResturantName, categories);
 //Mutating Variables
 let a1 = 111;
 let b1 = 999;
-const obj = { a1: 25, b1: 10, c: 56 };
+const obj = {
+    a1: 25,
+    b1: 10,
+    c: 56
+};
 ({ a1, b1 } = obj);
 console.log(a1, b1);
 
@@ -178,7 +182,7 @@ console.log(sat);
 console.log(weekDays);
 
 //Rest Arguments
-const add = function(...numbers) {
+const add = function (...numbers) {
     let sum = 0;
     numbers.forEach(element => {
         sum += element;
@@ -193,3 +197,36 @@ const X = [11, 45, 656, 54];
 add(...X);
 
 restaurant.orderPizza('Chicken', 'Mushroom', 'Onion', 'Cheese', 'Olive');
+
+if (restaurant.openingHours && restaurant.openingHours.mon) {
+    console.log(restaurant.openingHours.mon.open);
+}
+
+const days = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+
+//optimal chaning
+console.log(restaurant.openingHours.mon?.open);
+console.log(restaurant?.openingHours?.fri?.open);
+
+for (const day of days) {
+    //console.log(day);
+    const open = restaurant.openingHours[day]?.open ?? 'closed';
+    console.log(`On ${day}, we open at ${open}`);
+}
+const properties = Object.keys(openingHours);
+console.log(properties);
+let openStr = `We are open at ${properties.length} days: `;
+for (const day of properties) {
+    openStr += `${day}, `;
+}
+console.log(openStr);
+
+const values = Object.values(openingHours);
+console.log(values);
+
+const entries = Object.entries(openingHours);
+console.log(entries);
+
+for (const [key, { open, close }] of entries) {
+    console.log(`On ${key} we open at ${open} and closed at ${close}`);
+}
